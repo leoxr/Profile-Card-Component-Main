@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+html {
+    /* background-color: hsl(229, 23%, 23%); */
+    /* background-color: hsl(227, 10%, 46%); */
+    /* background: url(/images/mobile-design.jpg) no-repeat center; */
+    /* background: url(/images/desktop-design.jpg)no-repeat center; */
+    
+}
+
+body {
+  
+  
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before {
+    content: "";
+    background: url(/images/bg-pattern-top.svg) no-repeat;
+    background-position: left -248px top -250px;
+    position: absolute;
+    z-index: -1;
+    width: 1382px;
+    height: 1382px;
+    
+}
+
+.container::after {
+    content: "";
+    background: url(/images/bg-pattern-bottom.svg) no-repeat;
+    background-size: 45%;
+    background-position: right 91px bottom 46px;
+    position: absolute;
+    z-index: -1;
+    width: 1382px;
+    height: 1382px;
+    
+}
+
+.card-profile {
+    /* opacity: .2; */
+    background: hsl(0, 0%, 100%);;
+    width: 326px;
+    height: 374px;
+    margin-left: 1px;
+    margin-top: 1px;
+    border-radius: 14px;
+    font-family: 'Kumbh Sans';
+}
+
+.card-profile__background {
+    background: url(/images/bg-pattern-card.svg) no-repeat;
+    height: 140px;
+    border-radius: 14px 14px 0px 0px;
+}
+
+.card-profile__img-container {
+    background-color: hsl(0, 0%, 100%);
+    width: 106px;
+    height: 106px;
+    border-radius: 106px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -53px;
+    margin-bottom: 19px;
+}
+
+.card-profile__img {
+    width: 96px;
+    height: 96px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 96px;
+}
+
+.card-profile__name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 1px;
+    color: hsl(229, 23%, 23%);
+
+}
+
+.card-profile__age {
+    font-weight: 400;
+    margin-left: 6px;
+    color: hsl(0, 0%, 59%);
+}
+
+.card-profile__country {
+    text-align: center;
+    font-size: 14px;
+    margin-top: -7px;
+    margin-bottom: 25px;
+    color: hsl(0, 0%, 59%);;
+}
+
+.card-profile__line {
+    background-color:  hsl(0, 0%, 59%);
+    width: 100%;
+    height: 1px;
+    margin-bottom: 7px;
+}
+
+.card-profile__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 24px;
+    margin-right: 24px;
+    justify-items: center;
+    
+}
+
+
+.card-profile__follow {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 11px;
+    color: hsl(229, 23%, 23%);
+}
+.card-profile__follow-name {
+    margin-top: -15px;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.card-profile__like {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: -3px;
+    color: hsl(229, 23%, 23%);
+}
+.card-profile__like-name {
+    margin-top: -15px;
+    margin-left: 3px;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+.card-profile__photo {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: -3px;
+    color: hsl(229, 23%, 23%);
+}
+.card-profile__photo-name {
+    margin-top: -15px;
+    margin-left: -5px;
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+@media (min-width: 480px) {
+    
+    .card-profile {
+        width: 350px; 
+        border-radius: 17px 14px 16px 14px;
+    }
+    .card-profile__name {
+        margin-left: -2px;
+    }
+    .card-profile__age {
+       
+        margin-left: 5px;
+  
+    }
+    .card-profile__line {
+        margin-bottom: 6px;
+    }
+    .card-profile__follow {
+        margin-left: 14px;
+    }
+    .card-profile__follow-name {
+        margin-left: 3px;
+    }
+    .card-profile__like {
+        margin-left: 1px;
+    }
+    .card-profile__like-name {
+        margin-left: 7px;
+    }
+    .card-profile__photo {
+        margin-left: -.1em;
+    }
+    
+    .container::before {
+       
+        background-position: left -315px top -180px;
+       
+        
+    }
+    
+    .container::after {
+        
+        background-size: 70%;
+        background-position: right -250px bottom -293px;
+        
+    }
+
+}
